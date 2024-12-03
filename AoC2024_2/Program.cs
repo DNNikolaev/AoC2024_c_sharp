@@ -28,11 +28,8 @@ var reportsValues = reports
         .Split(" ")
         .Select(int.Parse));
 
-var reportDiffs = reportsValues
-    .Select(getReportDiffs);
-    
-var validReports = reportDiffs    
-    .Count(isValid);
+var validReports = reportsValues    
+    .Select(getReportDiffs).Count(isValid);
     
     Console.WriteLine(validReports);
 

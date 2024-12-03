@@ -4,6 +4,8 @@ var lines = streamReader.ReadToEnd().Split("\r\n");
 var leftList = lines.Select(l => int.Parse(l.Split(' ')[0])).ToList();
 var rightList = lines.Select(l => int.Parse(l.Split(' ')[^1])).ToList();
 
+Console.WriteLine(leftList.Sum() - rightList.Sum());
+
 leftList.Sort();
 rightList.Sort();
 
