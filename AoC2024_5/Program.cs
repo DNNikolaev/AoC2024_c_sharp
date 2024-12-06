@@ -27,7 +27,6 @@ Console.WriteLine(sum);
 string[] MakeValid(string[] invalidUpdate)
 {
     string[] validUpdate = new string[invalidUpdate.Length];
-    var validUpdateV2 = new List<string>();
     for (int i = invalidUpdate.Length - 1; i >= 0; i--)
     {
         var initialIndex = invalidUpdate.Length - 1;
